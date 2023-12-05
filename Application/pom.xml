@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.noodletest</groupId>
+    <artifactId>NoodleTest</artifactId>
+    <version>0.1-SNAPSHOT</version>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+        <jetty.version>11.0.18</jetty.version>
+        <exec.mainClass>com.noodletest.ServerMain</exec.mainClass>
+    </properties>
+
+    <!-- Dependencies -->
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jdbi/jdbi3-core -->
+        <dependency>
+            <groupId>org.jdbi</groupId>
+            <artifactId>jdbi3-core</artifactId>
+            <version>3.41.3</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+        <dependency>
+            <groupId>com.microsoft.sqlserver</groupId>
+            <artifactId>mssql-jdbc</artifactId>
+            <version>12.4.2.jre11</version>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
