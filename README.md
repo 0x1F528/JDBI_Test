@@ -6,18 +6,31 @@ Run scripts.cmd (as Administrator) to generate the test database in SQL Server 1
 
 ## Run:
 Run the java code (main)
+1. Test SQL Query with JDBI $${\color{lightgreen}PASS}$$
+2. Test SPROC with JDBC $${\color{lightgreen}PASS}$$
+3. Test SPROC with JDBI $${\color{red}FAIL}$$
 
 ## Output:
 [ ... ]
+
 com.noodletest.ServerMain
+
 --> 1 - Hopladee
+
 --> 2 - Troubadoo
+
 --> 3 - Fainticar
+
 --> 4 - Slurpuree
+
 ==> 1 = Hopladee
+
 ==> 2 = Troubadoo
+
 ==> 3 = Fainticar
+
 ==> 4 = Slurpuree
+
 Exception in thread "main" java.lang.NullPointerException
 	at java.base/java.util.Objects.requireNonNull(Objects.java:209)
 	at org.jdbi.v3.core.statement.OutParameters.lambda$getRowSet$1(OutParameters.java:274)
